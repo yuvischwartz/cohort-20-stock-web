@@ -8,10 +8,13 @@ function Search(props) {
                       <i className={'fa-solid fa-magnifying-glass'}/>
             </button> 
             <div className={'w-full'}>
-                <input className={'w-96 px-4 py-2 text-gray-800 focus:outline-none rounded-full text-md'}
+            <input className={'w-96 px-4 py-2 text-gray-800 focus:outline-none rounded-full text-md'}
+                onChange={props.onChange}
                 type={'search'}
+                value={props.portfolio.symbol}
                 placeholder={'Search...'}
-              />
+            />
+            
             </div> 
         </div>
     </>
