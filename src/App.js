@@ -1,6 +1,8 @@
 import React from 'react'
 import {useState} from 'react'; 
 import './App.css';
+// const API_HOST = 'http://localhost:3001/api'
+// const Stock_API_URL = `${API_HOST}/portfolio`;
 import Topbar from './components/Topbar';
 // import SearchBox from './components/SearchBox';
 import PortfolioBox from './components/PortfolioBox';
