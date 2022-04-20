@@ -50,7 +50,7 @@ const buyStock = async () => {
   console.log('button was clicked');
   setBuyClick(!buyClick);
 };
-  const sellStoke = async () => {
+  const sellStock = async () => {
   
   };
 

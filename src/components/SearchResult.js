@@ -24,6 +24,8 @@ function SearchResult(props) {
 
   return (
     <>
+
+      
     <div className={'flex flex-row justify-center m-10'}>
       <h1 className={'text-md border-2 border-green-500 px-6 py-2 mx-1'}>{props.stockName}</h1>
       <h2 className={'border-2 border-green-500 px-6 py-2 mx-1'}>${props.stockPrice}</h2>

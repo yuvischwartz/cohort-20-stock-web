@@ -33,16 +33,16 @@ function PortfolioBox(props) {
                 <th className={'font-medium text-md px-6 py-4 text-left'}>Quantity</th>
                 <th className={'font-medium text-md px-6 py-4 text-left'}>Price</th>
                 <th className={'font-medium text-md px-6 py-4 text-left'}>Buy/Sell</th>
-            </tr>
+          </tr>
         {props.stocks && props.stocks.map((item, idx) => {
-         return <div><tr className={idx%2==0?'bg-gray-100 border-b':'bg-white border-b'}>
-                <td className={'px-6 py-4 text-sm font-medium text-gray-900'}>{props.stokeName}</td>
-                <td className={'px-6 py-4 text-sm text-gray-800'}>{props.quantity}</td>
-                <td className={'px-6 py-4 text-sm text-gray-800'}>{props.price}</td>
+         return <tr className={idx%2==0?'bg-gray-100 border-b w-full':'bg-white border-b w-full'}>
+                <td className={'px-6 py-4 text-sm font-medium text-gray-900 '}>{item.stockName}</td>
+                <td className={'px-6 py-4 text-sm text-gray-800'}>{item.quantity}</td>
+                <td className={'px-6 py-4 text-sm text-gray-800'}>{item.price}</td>
            <td className={'px-6 py-4 text-sm text-gray-800'}><input onClick={handleStockName} type="checkbox" id=''name='' value=''/></td>
          </tr>
            {/* {click && <WhenStockSelected stocks={props.stocks}/>} */}
-            </div>
+            
         })}
         </table>
         {click && <WhenStockSelected buyStock={props.buyStock} stockNameSelected={stockNameSelected} stockPriceSelected={stockPriceSelected} stockQuantitySelected={stockQuantitySelected}/>}
